@@ -3,6 +3,8 @@ body {
     background-color: var(--primary-white-color);
     font-family: roboto, sans-serif;
     letter-spacing: 0.03em;
+
+
 }
 
 h1,
@@ -15,6 +17,9 @@ ul {
 }
 
 .section {
+    @media screen and (max-width:1599px) {
+       padding: 60px 0; 
+    }
     padding: 94px 0;
 }
 .section__title {
@@ -24,9 +29,22 @@ ul {
     line-height: 1.17;
     text-align: center;
     margin-bottom: 50px;
+
+    @media screen and (max-width:1599px) {
+    font-size: 28px;
+    margin-bottom: 30px;
+    }
 }
 .container {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
+    @media screen and (min-width:768px) {
+        width: 738px;
+    } 
+
 }
