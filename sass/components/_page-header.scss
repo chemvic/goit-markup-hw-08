@@ -5,23 +5,46 @@
 .header__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
 }
 
 .header__logo {
-    margin-right: 93px;
+    @media screen (min-width:798px) {
+       margin-right: 87px; 
+    }
+    @media screen (min-width:1200px) {
+      margin-right: 93px;
+    }    
 }
 
+.navigation{
+    @media screen and (max-width:797px) {
+        display: none;
+    }
+    @media screen and (min-width:798px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+     
+}
 
 /* site-nav */
 .site-nav {
-    display: flex;
     @extend %list;
+   
+    @media screen and (min-width:798px) {
+    display: flex;
+        }
 }
 
 .site-nav__item {
+    @media screen and (min-width:798px) {
     margin-left: 50px;
     position: relative;
+        }
+   
 }
 
 .site-nav__item:last-child {
@@ -66,20 +89,29 @@
 
 /* contacts */
 .contacts {
-    display: flex;
+    
     margin-left: auto;
     @extend %list;
+
+    @media screen and (min-width:798px) {
+            display: block;
+        }
+    @media screen and (min-width:1200px) {
+            display: flex;
+        }
 }
+    
+
+    
 
 .contacts__item {
     margin-left: 50px;
+    
 }
 
 .contacts__link {
     color: var(--secondary-text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
@@ -92,30 +124,56 @@
     &:focus {
     color: var(--accent-color);
 }
+
+@media screen and (min-width:798px) {
+     font-size: 12px;
+    line-height: 1.17;
+}
+@media screen and (min-width:1200px) {
+     font-size: 14px;
+    line-height: 1.14;
+}
 }
 
 .contacts__icon-mail {
-    width: 16px;
-    height: 12px;
+   
     padding: 0;
-    margin-right: 10px;
+    
     fill: var(--secondary-text-color);
 
     .contacts__link:hover &,
     .contacts__link:focus & {
     fill: var(--accent-color);
 }
+@media screen and (min-width:798px) {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+}
+
+@media screen and (min-width:1200px) {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
 }
 
 .contacts__icon-smartphone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
     fill: var(--secondary-text-color);
 
     .contacts__link:hover &,
     .contacts__link:focus & {
     fill: var(--accent-color);
+}
+@media screen and (min-width:798px) {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+}
+
+@media screen and (min-width:1200px) {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
 }
 }
 
@@ -123,4 +181,4 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} 
