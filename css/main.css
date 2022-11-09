@@ -311,7 +311,7 @@ ul {
 .section {
   padding: 94px 0;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding: 60px 0;
   }
@@ -325,7 +325,7 @@ ul {
   text-align: center;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .section__title {
     font-size: 28px;
     margin-bottom: 30px;
@@ -337,12 +337,12 @@ ul {
   padding: 0 15px;
   margin: 0 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 738px;
   }
@@ -710,7 +710,7 @@ ul {
 
 .overlay {
   height: 600px;
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -771,12 +771,12 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .benefits__icon {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits__icon {
     width: 354px;
   }
@@ -792,12 +792,12 @@ ul {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .benefits {
     display: block;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -807,7 +807,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .benefits__item {
     width: 270px;
   }
@@ -998,7 +998,7 @@ ul {
     width: 354px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .staff__info {
     width: 270px;
   }
