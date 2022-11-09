@@ -6,8 +6,8 @@
  }
 
  .hero__overlay {
-     height: 600px;
-     width: 1600px;
+     height: auto;
+     max-width: 1600px;
      margin: 0 auto;
      background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)), url(../images/hero.jpg);
      background-repeat: no-repeat;
