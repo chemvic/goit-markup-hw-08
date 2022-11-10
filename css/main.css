@@ -897,9 +897,8 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .benefits {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -915,18 +914,14 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
-    width: 270px;
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 
 @media screen and (max-width: 767px) {
   .benefits__item:not(:last-child) {
     margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .benefits__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
