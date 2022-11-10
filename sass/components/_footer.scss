@@ -60,13 +60,23 @@
  }
 
  .foot {
-     display: flex;
-     align-items: baseline;
-     @extend %list;
+    @extend %list;
+    text-align: center;
+    @media screen and (min-width:1200px) {
+        display: flex;
+     align-items: baseline; 
+
+    }
+    
+     
  }
 
  .footer-social {
-     margin-left: 70px;
+    @media screen and (min-width:1200px) {
+          
+         margin-left: 70px;
+
+        }
  }
 
  .subscribe {
