@@ -7,12 +7,16 @@
 
  .hero__overlay {
      height: auto;
-     max-width: 1600px;
+    //  max-width: 1600px;
      margin: 0 auto;
      background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)), url(../images/hero.jpg);
      background-repeat: no-repeat;
      background-position: center;
      background-size: contain;
+    display: block;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
  }
 
  .hero__title {

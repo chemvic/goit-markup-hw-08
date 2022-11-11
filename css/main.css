@@ -299,6 +299,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 h1,
 h2,
 h3,
@@ -673,6 +681,20 @@ ul {
 .foot {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 @media screen and (min-width: 1200px) {
   .foot {
     display: -webkit-box;
@@ -701,7 +723,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: auto;
+  margin: 60px auto 0;
 }
 
 .subscribe-foot__input {
@@ -712,6 +734,16 @@ ul {
   border-radius: 4px;
   background-color: var(--footer-background-color);
   color: var(--primary-white-color);
+}
+@media screen and (min-width: 768px) {
+  .subscribe-foot__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-foot__input {
+    width: 358px;
+  }
 }
 .subscribe-foot__input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -815,13 +847,17 @@ ul {
 
 .hero__overlay {
   height: auto;
-  max-width: 1600px;
   margin: 0 auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero__title {
