@@ -6,11 +6,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-grow: 1;
+    position: relative;
 
 }
 
 .header__logo {
-    @media screen and (min-width:798px) {
+    padding: 15px;
+    @media screen and (min-width:768px) {
        margin-right: 87px; 
     }
     @media screen and (min-width:1200px) {
@@ -18,11 +21,33 @@
     }    
 }
 
-.navigation{
-    @media screen and (max-width:797px) {
+.header__burger-menu{
+    @media screen and (min-width:768px){
         display: none;
     }
-    @media screen and (min-width:798px) {
+}
+
+.burger-menu__icon{
+    position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 0;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-color: var(--primary-white-color);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:focus,
+        &:hover {
+            fill: var(--accent-color);
+        }
+}
+
+.navigation{   
+    display: none;
+ 
+    @media screen and (min-width:768px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -33,14 +58,13 @@
 /* site-nav */
 .site-nav {
     @extend %list;
-   
-    @media screen and (min-width:798px) {
+ 
     display: flex;
-        }
+        
 }
 
 .site-nav__item {
-    @media screen and (min-width:798px) {
+    @media screen and (min-width:768px) {
     margin-left: 50px;
     position: relative;
         }
@@ -68,11 +92,13 @@
     &:focus {
     color: var(--accent-color);
 }
+
+    &--current {
+        color: var(--accent-color);
+    }
 }
 
-.site-nav__link--current {
-    color: var(--accent-color);
-}
+
 
 .site-nav__link--current::after {
     position: absolute;
@@ -93,7 +119,7 @@
     margin-left: auto;
     @extend %list;
 
-    @media screen and (min-width:798px) {
+    @media screen and (min-width:768px) {
             display: block;
         }
     @media screen and (min-width:1200px) {
@@ -125,7 +151,7 @@
     color: var(--accent-color);
 }
 
-@media screen and (min-width:798px) {
+@media screen and (min-width:768px) {
      font-size: 12px;
     line-height: 1.17;
 }
@@ -146,7 +172,7 @@
     fill: var(--accent-color);
 }
 
-@media screen and (min-width:798px) {
+@media screen and (min-width:768px) {
     width: 14px;
     height: 10px;
     margin-right: 8px;
@@ -166,7 +192,7 @@
     fill: var(--accent-color);
 }
 
-@media screen and (min-width:798px) {
+@media screen and (min-width:768px) {
     width: 10px;
     height: 14px;
     margin-right: 8px;

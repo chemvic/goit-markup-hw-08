@@ -16,12 +16,12 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <div>
-          <a lang="en" href="./index.html" class="logo logo--black header__logo"
+        <div class="header__logo">
+          <a lang="en" href="./index.html" class="logo logo--black"
             ><span class="logo">Web</span>Studio</a
           >
         </div>
-
+ 
         <div class="navigation">
           <nav>
             <ul class="site-nav">
@@ -63,8 +63,19 @@
               >
             </li>
           </ul>
+         
+        </div> 
+        <!-- burger button -->
+      <button type="button" class="header__burger-menu">
+            <svg width="40" height="40" class="burger-menu__icon">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
+
+      </div>
+     
     </header>
     <main>
       <section class="hero hero__overlay">
@@ -497,6 +508,61 @@
         </ul>
       </div>
     </footer>
+
+    <!-- mobile-menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu__container">
+        <button class="mobile-menu__close-button">
+         <svg width="40" height="40" class="mobile-close__icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg> 
+        </button>
+         <nav class="mobile-menu__nav">
+<li>
+  <ul class="mobile-menu__site-nav">
+    <li> <a
+                  href="./index.html"
+                  class="mobile-nav__link mobile-nav__link--current"
+                  >Студіо</a
+                ></li>
+    <li> <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+              </li></li>
+                <a href="#" class="mobile-nav__link">Контакти</a>
+    <li></li>
+     </ul>
+</li>
+<li>
+  <ul class="mobile-menu__contacts">
+    <li class="mobile-contacts__item">
+      <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--blue"
+                >+38 096 111 11 11</a
+              >
+    </li>
+    <li class="mobile-contacts__item">
+      <a
+                  lang="en"
+                  href="mailto:info@devstudio.com"
+                  class="mobile-contacts__link"
+                >info@devstudio.com</a
+                >
+    </li>
+  </ul>
+</li>
+<li>
+  <ul class="mobile-menu__social">
+    <li><a href="" class="mobile-social__link">Instagram</a></li>
+    <li><a href="" class="mobile-social__link">Twitter</a></li>
+    <li><a href="" class="mobile-social__link">Facebook</a></li>
+    <li><a href="" class="mobile-social__link">LinkedIn</a></li>
+  </ul>
+</li>
+      </nav>
+      </div>
+     
+    </div>
+
+
+    <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
