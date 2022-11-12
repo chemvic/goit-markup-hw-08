@@ -3,18 +3,26 @@
     font-family: Raleway, sans-serif;
     font-weight: 700;    
     text-decoration: none;
-
+    
     @media screen and (max-width:1199px){
     font-size: 24px;
-    line-height: 1.174;
+    line-height: 1.174;    
     }
     
     @media screen and (min-width:1200px){
     font-size: 26px;
     line-height: 1.19;
+    text-align: start;
     }
 }
-
+.header__logo{
+text-align: start;
+}
 .logo--black {
     color: var(--black-color);
+    // text-align: start;
+}
+.logo--inverse {
+    color: var(--primary-white-color);
+    display: block;    
 }
