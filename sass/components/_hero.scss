@@ -20,19 +20,32 @@
  }
 
  .hero__title {
-     width: 696px;
-     height: 120px;
+     width: 360px;
+     height: 84px;
      color: var(--primary-white-color);
      font-weight: 900;
-     font-size: 44px;
-     line-height: 1.36;
+     font-size: 26px;    
+     line-height: 1.62;
      text-align: center;
      letter-spacing: 0.06em;
      text-transform: uppercase;
      margin: 0 auto 30px;
+    @media screen and (min-width:1200px) {
+    width: 696px;
+    height: 120px;
+    font-size: 44px;
+    line-height: 1.36;   
+
+    }
+    
+    
  }
 
  
  .hero__button {
-     padding: 10px 32px;
+     padding: 10px 24px;
+
+     @media screen and (min-width:1200px) {
+        padding: 10px 32px;
+     }
  }

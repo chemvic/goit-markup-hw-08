@@ -7,6 +7,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -19,9 +20,9 @@
 }
 
 .modal {
-    position: absolute;
-    min-width: 528px;
-    min-height: 581px;
+    width: 450px;
+    height: 609px;
+    position: absolute;    
     border-radius: 4px;
     background-color: var(--primary-white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -29,6 +30,11 @@
     left: 50%;
     padding: 40px;
     transform: translate(-50%, -50%) scale(1);
+
+    @media screen and (min-width:1200px) {
+            min-width: 528px;
+            min-height: 581px;
+        }
 }
 
 .close-button {
@@ -62,10 +68,13 @@
 }
 
 .modal__title {
+    @media screen and (min-width:1200px) {
+         line-height: 1.15;
+    }
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+   line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
@@ -141,30 +150,43 @@
     border-color: var(--accent-color);
 }
     &::placeholder {
-    font-family: 'Roboto';
-    font-size: 12px;
-    line-height: 1.17;
+    font-family: 'Roboto';    
+    font-size: 14px;
+    line-height: 1.143;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width:1200px) {
+        font-size: 12px;
+    line-height: 1.17;
+    }
 }
 }
 
 
 .modal__agreement {
     font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.167;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     display: flex;
     align-items: center;
     padding-left: 8px;
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+        margin-bottom: 30px;
+    }
 }
 
 .modal__terms {
     margin-left: 8px;
     color: var(--accent-color);
+    font-size: 12px;
+    line-height: 1.167;
 }
 
 .modal__checkbox-agreem {
@@ -211,7 +233,7 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    margin-left: 12px;
+    // margin-left: 12px;
     margin-left: auto;
     margin-right: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
