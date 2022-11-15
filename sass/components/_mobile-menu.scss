@@ -116,3 +116,9 @@ margin-bottom: 306px;
 .mobile-menu__social{
     @extend %list;
 }
+.mobile-social__item{
+display: flex;
+align-items: baseline;
+border-left: 3px solid rgba($color: #212121, $alpha: 0.2);
+}
+
