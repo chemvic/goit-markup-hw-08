@@ -1,3 +1,4 @@
+
 .buttons__button {
     color: var(--primary-text-color);
     background-color: var(--primary-button-color);
@@ -35,13 +36,35 @@
 
 .buttons {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: stretch;
     @extend %list;
+@media screen and (max-width:767px) {
+        max-width: 326px;
+        margin-bottom: 40px;
+ 
+}
+   
+    @media screen and (min-width:768px) {
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and(min-width:1200px) {
+        margin-bottom: 50px;
+        justify-content: center;
+    }
 }
 
-.buttons__item:not(:last-child) {
+.buttons__item{
+    &:not(:last-child) {
     margin-right: 8px;
+}
+ &:not(:nth-last-child(-n + 2)){
+        margin-bottom: 15px;
+    }
+
 }
 
 
@@ -110,22 +133,33 @@
 
 
 .service-set {
-    display: flex;
-    flex-wrap: wrap;
     @extend %list;
-}
+    @media screen  and (min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+        // flex-basis: calc((100% - 30px) / 2);
+       gap:30px; 
+    } 
+      @media screen and (min-width:1200px) {
+        // flex-basis: calc((100% - 60px) / 3);  
+        gap: 30px;  
+    } 
+      }  
+    
+    
+// @media screen and (min-width:1200px) {
+//   .service-set__item {
+//     margin-right: 30px;
+// &:nth-child(3n) {
+//         margin-right: 0;
+//     }
+// &:not(:nth-last-child(-n + 3)) {
+//     margin-bottom: 30px;
+// }
+// }  
+// }
 
-.service-set__item {
-    margin-right: 30px;
-}
 
-.service-set__item:nth-child(3n) {
-    margin-right: 0;
-}
-
-.service-set__item:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
-}
 
 .card__info {
     padding: 20px 24px;
