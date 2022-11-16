@@ -78,8 +78,8 @@
     </header>
     <main>
       <section class="hero hero__overlay">
-        <div class="container">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <div class="container hero_container">
+          <h1 class="hero__title hero_container__hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button
             class="button hero__button pointer"
             type="button"
@@ -151,9 +151,11 @@
               <div class="bord">
                 <img
                   class="we-do__img"
-                  src="./images/display-keyboard.jpg"
+                  srcset="./images/display-keyboard1x.jpg 1x,
+                  ./images/display-keyboard2x.jpg 2x"
+                  src="./images/color-table1x.jpg"
                   alt="Набір тексту на клавіатурі"
-                  width="370"
+                  max-width="370"
                 />
                 <div class="we-do__text-bord">Десктопні додатки</div>
               </div>
@@ -161,18 +163,20 @@
             <li class="we-do__item">
               <img
                 class="we-do__img"
-                src="./images/smart-interface.jpg"
+                srcset="./images/smart-interface1x.jpg 1x,./images/smart-interface2x.jpg 2x  "
+                src="./images/color-table1x.jpg"
                 alt="Смартфон"
-                width="370"
+                max-width="370"
               />
               <div class="we-do__text-bord">Мобільні додатки</div>
             </li>
             <li class="we-do__item">
               <img
                 class="we-do__img"
-                src="./images/color-table.jpg"
+                srcset="./images/color-table1x.jpg 1x, ./images/color-table2x.jpg 2x"
+                src="./images/color-table1x.jpg"
                 alt="Таблиця кольорів"
-                width="370"
+                max-width="370"
               />
               <div class="we-do__text-bord">Дизайнерські рішення</div>
             </li>
@@ -186,9 +190,15 @@
             <li class="staff__item">
               <img
                 class="staff__photo"
-                srcset="./images/igor-mobile1x.jpg 1x,./images/igor-mobile1x.jpg 2x "
-                src="./images/igor-mobile1x.jpg"
+                srcset="./images/igor-desktop1x.jpg 270w,
+                ./images/igor-tablet1x.jpg 354w,
+                ./images/igor-mobile1x.jpg 450w,
+                ./images/igor-desktop2x.jpg 540w,
+                ./images/igor-tablet2x.jpg 708w,
+                ./images/igor-mobile2x.jpg 900w"
+                src="./images/igor-desktop1x.jpg"
                 alt="Ігор Дем'яненко"
+                sizes="(min-width:1200px) 25vw,(min-width:768px) 50vw,100vw"
                
               />
               <div class="staff__info">
@@ -230,9 +240,16 @@
             <li class="staff__item">
               <img
                 class="staff__photo"
-                src="./images/olha.jpg"
+                srcset="./images/igor-desktop1x.jpg 270w,
+                ./images/olha-tablet1x.jpg 354w,
+                ./images/olha-mobile1x.jpg 450w,
+                ./images/olha-desktop2x.jpg 540w,
+                ./images/olha-tablet2x.jpg 708w,
+                ./images/olha-mobile2x.jpg 900w"
+                src="./images/olha-desktop1x.jpg"
                 alt="Ольга Рєпіна"
-                width="270"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw,100vw"
+               
               />
               <div class="staff__info">
                 <h3 class="staff__name">Ольга Рєпіна</h3>
@@ -273,9 +290,16 @@
             <li class="staff__item">
               <img
                 class="staff__photo"
-                src="./images/mykola.jpg"
+                srcset="./images/igor-desktop1x.jpg 270w,
+                ./images/mykola-tablet1x.jpg 354w,
+                ./images/mykola-mobile1x.jpg 450w,
+                ./images/mykola-desktop2x.jpg 540w,
+                ./images/mykola-tablet2x.jpg 708w,
+                ./images/mykola-mobile2x.jpg 900w"
+                src="./images/mykola-desktop1x.jpg"
                 alt="Микола Тарасов"
-                width="270"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw,100vw"
+               
               />
               <div class="staff__info">
                 <h3 class="staff__name">Микола Тарасов</h3>
@@ -316,9 +340,16 @@
             <li class="staff__item">
               <img
                 class="staff__photo"
-                src="./images/mykhailo.jpg"
+                srcset="./images/igor-desktop1x.jpg 270w,
+                ./images/mykhailo-tablet1x.jpg 354w,
+                ./images/mykhailo-mobile1x.jpg 450w,
+                ./images/mykhailo-desktop2x.jpg 540w,
+                ./images/mykhailo-tablet2x.jpg 708w,
+                ./images/mykhailo-mobile2x.jpg 900w"
+                src="./images/mykhailo-desktop1x.jpg"
                 alt="Михайло Єрмаков"
-                width="270"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw,100vw"
+               
               />
               <div class="staff__info">
                 <h3 class="staff__name">Михайло Єрмаков</h3>

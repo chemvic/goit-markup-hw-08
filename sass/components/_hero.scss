@@ -1,10 +1,15 @@
- .hero {
-     padding: 200px 0;
-     text-align: center;
-     background-color: var(--footer-background-color);
+ .hero {display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer-background-color);
 
  }
-
+ .hero_container{
+    margin: 0 auto;
+ }
+.hero_container__hero-title{
+ margin-bottom: 30px;
+}
  .hero__overlay {
      height: 400px;
      max-width: 480px;
@@ -12,8 +17,7 @@
      background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)), url(../images/hero-mobile1x.jpg);
      background-repeat: no-repeat;
      background-position: center;
-     background-size: 480px 400px;
-      
+     background-size: 480px 400px;    
  }
  @media (min-device-pixel-ratio: 2),
  (min-resolution: 192dpi),
@@ -21,8 +25,7 @@
      .hero__overlay {
          background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
             url(../images/hero-mobile2x.jpg);
-     }
-    
+     }    
  }
   @media screen and (min-width:768px) {
       .hero__overlay {
@@ -33,7 +36,6 @@
           background-repeat: no-repeat;
           background-position: center;
           background-size: 768px 400px;
-
       }
        @media (min-device-pixel-ratio: 2),
  (min-resolution: 192dpi),
@@ -42,8 +44,7 @@
          background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
             url(../images/hero-tablet2x.jpg);
      }
-    
- }
+     }
   }
   @media screen and (min-width:1200px) {
       .hero__overlay {
@@ -53,7 +54,7 @@
           background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)), url(../images/hero-desktop1x.jpg);
           background-repeat: no-repeat;
           background-position: center;
-          background-size: 1600px 600px;
+          background-size: cover;
 
       }
        @media (min-device-pixel-ratio: 2),
@@ -78,7 +79,8 @@
      text-align: center;
      letter-spacing: 0.06em;
      text-transform: uppercase;
-     margin: 0 auto 30px;
+     
+
     @media screen and (min-width:1200px) {
     width: 696px;
     height: 120px;
@@ -93,7 +95,7 @@
  
  .hero__button {
      padding: 10px 24px;
-
+    margin: 0 auto;
      @media screen and (min-width:1200px) {
         padding: 10px 32px;
      }

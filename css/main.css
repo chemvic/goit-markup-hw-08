@@ -819,9 +819,24 @@ ul {
 }
 
 .hero {
-  padding: 200px 0;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: var(--footer-background-color);
+}
+
+.hero_container {
+  margin: 0 auto;
+}
+
+.hero_container__hero-title {
+  margin-bottom: 30px;
 }
 
 .hero__overlay {
@@ -868,7 +883,7 @@ ul {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1600px 600px;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -887,7 +902,6 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 0 auto 30px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -900,6 +914,7 @@ ul {
 
 .hero__button {
   padding: 10px 24px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .hero__button {
@@ -1750,16 +1765,6 @@ ul {
   margin-bottom: 16px;
 }
 
-.staff {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media screen and (max-width: 767px) {
-  .staff {
-    display: block;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .staff {
     display: -webkit-box;
@@ -1767,6 +1772,17 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .staff {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -1823,17 +1839,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .staff__info {
     width: 270px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .staff__photo {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .staff__photo {
-    width: 354px;
   }
 }
 
@@ -1910,12 +1915,6 @@ ul {
 
 .section__we-do {
   padding-top: 0;
-}
-
-.we-do__img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .we-do__item {
