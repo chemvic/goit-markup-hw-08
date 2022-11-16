@@ -102,13 +102,17 @@ margin-bottom: 306px;
     letter-spacing: 0.02em;
     text-decoration: none;
     text-align: left;
+    &:not(:last-child){
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding: 0 4px;
+    }
 }
 
-.line{
-    color: rgba($color: #212121, $alpha: 0.2);
-    font-size: 36px;
+// .line{
+//     color: rgba($color: #212121, $alpha: 0.2);
+//     font-size: 36px;
    
-}
+// }
 
 .mobile-menu__nav,
 .mobile-menu__site-nav,
@@ -119,6 +123,5 @@ margin-bottom: 306px;
 .mobile-social__item{
 display: flex;
 align-items: baseline;
-border-left: 3px solid rgba($color: #212121, $alpha: 0.2);
 }
 
