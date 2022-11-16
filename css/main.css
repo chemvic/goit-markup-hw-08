@@ -884,7 +884,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .hero__overlay {
     height: 600px;
-    max-width: 1600;
+    max-width: 1600px;
     margin: 0 auto;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desktop1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop1x.jpg);
@@ -1066,10 +1066,9 @@ ul {
   text-decoration: none;
   text-align: left;
 }
-
-.line {
-  color: rgba(33, 33, 33, 0.2);
-  font-size: 36px;
+.mobile-social__link:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 0 4px;
 }
 
 .mobile-social__item {
@@ -1079,7 +1078,6 @@ ul {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  border-left: 3px solid rgba(33, 33, 33, 0.2);
 }
 
 .backdrop {
@@ -1403,6 +1401,9 @@ ul {
   position: relative;
 }
 
+.header__logo {
+  padding: 15px 0;
+}
 @media screen and (min-width: 768px) {
   .header__logo {
     margin-right: 87px;
