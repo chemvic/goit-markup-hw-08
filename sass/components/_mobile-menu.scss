@@ -3,8 +3,8 @@
     display: none;
     top: 0;
     left: 0;
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 100%;
     background-color: var(--primary-white-color);
     padding: 48px 40px;
     overflow-y: scroll;
@@ -21,6 +21,10 @@
     }
 }   
 
+.mobile-menu__container{
+    display: flex;
+    flex-direction: column;
+}
 .mobile-menu__close-button {
     position: absolute;
     top: 10px;
@@ -48,9 +52,9 @@
 @extend %list;
 }
 
-// .mobile-menu__site-nav{
-//     margin-bottom: auto;
-// }
+.mobile-menu__nav{
+    margin-bottom: auto;
+}
 
 .mobile-nav__link {
     color: var(--primary-text-color);
