@@ -1,19 +1,10 @@
 .mobile-menu{
-    position: fixed;
-    display: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    background-color: var(--primary-white-color);
-    padding: 48px 40px;
-    overflow-y: scroll;
+   display: none;
 
 
     &.is-open{
         display: flex;
-        flex-direction: column;
-    }
+           }
 
     &__social{
        display: flex; 
@@ -24,6 +15,14 @@
 .mobile-menu__container{
     display: flex;
     flex-direction: column;
+    position: fixed;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--primary-white-color);
+    padding: 48px 40px;
+    overflow-y: scroll;
 }
 .mobile-menu__close-button {
     position: absolute;
@@ -55,7 +54,6 @@
 .mobile-menu__nav{
     margin-bottom: auto;
 }
-
 .mobile-nav__link {
     color: var(--primary-text-color);
     font-weight: 500;
