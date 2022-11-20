@@ -27,8 +27,12 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width:479px) {
+        width:100%;
+    }
+
     @media screen and (min-width:480px) {
-        width: 450px;
+        width: 100%;
     }
     
     @media screen and (min-width:768px){
@@ -70,8 +74,9 @@
 }
 
 .benefits__item {
+  
     @media screen and (max-width:767px){
-       width: 450px;
+       width: 100%;
     }
      @media screen and (min-width:768px){
     flex-basis: calc((100% - 30px) / 2);
