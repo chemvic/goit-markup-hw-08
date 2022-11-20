@@ -100,6 +100,10 @@ margin-bottom: auto;
         color: var(--accent-color);
         font-size: 34px;
         line-height: 1.176;
+
+        @media screen and (max-width:400px) {
+                font-size: 26px;
+            }
     }
 
 }
@@ -120,6 +124,10 @@ margin-bottom: auto;
     letter-spacing: 0.02em;
     text-decoration: none;
     text-align: left;
+
+    @media screen and (max-width:400px) {
+        font-size: 12px;
+    }
    }
 
 .mobile-social__item{

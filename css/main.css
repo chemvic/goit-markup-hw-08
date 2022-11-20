@@ -1073,6 +1073,11 @@ ul {
   font-size: 34px;
   line-height: 1.176;
 }
+@media screen and (max-width: 400px) {
+  .mobile-contacts__link--blue {
+    font-size: 26px;
+  }
+}
 
 .mobile-contacts__item:not(:last-child) {
   margin-bottom: 32px;
@@ -1091,6 +1096,11 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
   text-align: left;
+}
+@media screen and (max-width: 400px) {
+  .mobile-social__link {
+    font-size: 12px;
+  }
 }
 
 .mobile-social__item {
