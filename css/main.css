@@ -1771,6 +1771,11 @@ ul {
 .card__img {
   position: relative;
   overflow: hidden;
+  height: 100%;
+}
+
+.card_photo {
+  height: 294px;
 }
 
 .card__overlay {

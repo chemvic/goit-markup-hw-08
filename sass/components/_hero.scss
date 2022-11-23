@@ -53,7 +53,6 @@
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
-
       }
        @media (min-device-pixel-ratio: 2),
  (min-resolution: 192dpi),
@@ -61,11 +60,9 @@
      .hero__overlay {
          background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
             url(../images/hero-desktop2x.jpg);
-     }
-    
+     }    
  }
   }
-
 
  .hero__title {
     width: 100%;;
@@ -100,13 +97,9 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         
-
     }
-    
-    
- }
-
- 
+       
+ } 
  .hero__button {
      padding: 10px 24px;
    
