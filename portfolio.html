@@ -14,69 +14,66 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-       <header class="header">
+    <header class="header">
       <div class="container header__container">
-        <div class="header__logo"><a lang="en" href="./index.html" class="logo logo--black"
+        <div class="header__logo">
+          <a lang="en" href="./index.html" class="logo logo--black"
             ><span class="logo">Web</span>Studio</a
           >
         </div>
- 
-       
-          <nav class="navigation">
-           <ul class="site-nav">
-              <li class="site-nav__item">
-                <a
-                  href="./index.html"
-                  class="site-nav__link"
-                  >Студіо</a
-                >
-              </li>
-              <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a>
-              </li>
-              <li class="site-nav__item">
-                <a href="#" class="site-nav__link">Контакти</a>
-              </li>
-            </ul> 
-          </nav>          
-          
-          <ul class="contacts">
-            <li class="contacts__item">
-              <div>
-                <a
-                  lang="en"
-                  href="mailto:info@devstudio.com"
-                  class="contacts__link"
-                >
-                  <svg class="contacts__icon-mail icon-cont">
-                    <use href="./images/icons.svg#icon-mail"></use></svg
-                  >info@devstudio.com</a
-                >
-              </div>
+
+        <nav class="navigation">
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студіо</a>
             </li>
-            <li class="contacts__item">
-              <a href="tel:+380961111111" class="contacts__link"
-                ><svg class="contacts__icon-smartphone icon-cont">
-                  <use href="./images/icons.svg#icon-smartphone"></use></svg
-                >+38 096 111 11 11</a
+            <li class="site-nav__item">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--current"
+                >Портфоліо</a
               >
             </li>
-          </ul>         
-        
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <div>
+              <a
+                lang="en"
+                href="mailto:info@devstudio.com"
+                class="contacts__link"
+              >
+                <svg class="contacts__icon-mail icon-cont">
+                  <use href="./images/icons.svg#icon-mail"></use></svg
+                >info@devstudio.com</a
+              >
+            </div>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link"
+              ><svg class="contacts__icon-smartphone icon-cont">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
         <!-- burger button -->
-      <button type="button" class="header__burger-menu js-open-menu">
-            <svg width="40" height="40" class="burger-menu__icon">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
-        </div>
+        <button type="button" class="header__burger-menu js-open-menu">
+          <svg width="40" height="40" class="burger-menu__icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-      </div>
-     
     </header>
     <main>
-      <section class="section ">
-        <div class="container ">
+      <section class="section">
+        <div class="container">
           <h1 class="visually-hidden">Перелік послуг</h1>
           <ul class="buttons">
             <li class="buttons__item">
@@ -106,18 +103,35 @@
               <div class="card">
                 <a class="card__services" href="#">
                   <div class="card__img">
-                    <img
-                    class="card_photo" srcset="./images/staff-cards-tablet1x.jpg 354w,
-                ./images/staff-cards-desktop1x.jpg 370w,
-                ./images/staff-cards-mobile1x.jpg 450w,
-                ./images/staff-cards-tablet2x.jpg 708w,
-                ./images/staff-cards-desktop2x.jpg 740w,
-                ./images/staff-cards-mobile2x.jpg 900w""
-                      src="./images/staff-cards-tablet1x.jpg"
-                      alt="Картки персоналу"
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                    <picture>
+                      <source
+                        class="card_photo"
+                        srcset="
+                          ./images/staff-cards-tablet1x.webp  354w,
+                          ./images/staff-cards-desktop1x.webp 370w,
+                          ./images/staff-cards-mobile1x.webp  450w,
+                          ./images/staff-cards-tablet2x.webp  708w,
+                          ./images/staff-cards-desktop2x.webp 740w,
+                          ./images/staff-cards-mobile2x.webp  900w
+                        "
+                        type="image/webp"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/staff-cards-tablet1x.jpg  354w,
+                          ./images/staff-cards-desktop1x.jpg 370w,
+                          ./images/staff-cards-mobile1x.jpg  450w,
+                          ./images/staff-cards-tablet2x.jpg  708w,
+                          ./images/staff-cards-desktop2x.jpg 740w,
+                          ./images/staff-cards-mobile2x.jpg  900w
+                        "
+                        src="./images/staff-cards-tablet1x.jpg"
+                        alt="Картки персоналу"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                    </picture>
 
-                    />
                     <div class="card__overlay">
                       <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -141,17 +155,35 @@
               <div class="card">
                 <a class="card__services" href="#">
                   <div class="card__img">
-                    <img
-                    class="card_photo" srcset="./images/basketball-tablet1x.jpg 354w,
-                ./images/basketball-desktop1x.jpg 370w,
-                ./images/basketball-mobile1x.jpg 450w,
-                ./images/basketball-tablet2x.jpg 708w,
-                ./images/basketball-desktop2x.jpg 740w,
-                ./images/basketball-mobile2x.jpg 900w"
-                      src="./images/basketball-tablet1x.jpg"
-                      alt="Баскетбол"
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
-                                         />
+                    <picture>
+                      <source
+                        class="card_photo"
+                        srcset="
+                          ./images/basketball-tablet1x.webp  354w,
+                          ./images/basketball-desktop1x.webp 370w,
+                          ./images/basketball-mobile1x.webp  450w,
+                          ./images/basketball-tablet2x.webp  708w,
+                          ./images/basketball-desktop2x.webp 740w,
+                          ./images/basketball-mobile2x.webp  900w
+                        "
+                        type="image/webp"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/basketball-tablet1x.jpg  354w,
+                          ./images/basketball-desktop1x.jpg 370w,
+                          ./images/basketball-mobile1x.jpg  450w,
+                          ./images/basketball-tablet2x.jpg  708w,
+                          ./images/basketball-desktop2x.jpg 740w,
+                          ./images/basketball-mobile2x.jpg  900w
+                        "
+                        src="./images/basketball-tablet1x.jpg"
+                        alt="Баскетбол"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                    </picture>
+
                     <div class="card__overlay">
                       <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -177,16 +209,35 @@
               <div class="card">
                 <a class="card__services" href="#">
                   <div class="card__img">
-                    <img 
-                    class="card_photo" srcset="./images/seafood-tablet1x.jpg 354w,
-                ./images/seafood-desktop1x.jpg 370w,
-                ./images/seafood-mobile1x.jpg 450w,
-                ./images/seafood-tablet2x.jpg 708w,
-                ./images/seafood-desktop2x.jpg 740w,
-                ./images/seafood-mobile2x.jpg 900w"
-                    src="./images/seafood-tablet1x.jpg" alt="Риба"
-                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
-/>
+                    <picture>
+                      <source
+                        class="card_photo"
+                        srcset="
+                          ./images/seafood-tablet1x.webp  354w,
+                          ./images/seafood-desktop1x.webp 370w,
+                          ./images/seafood-mobile1x.webp  450w,
+                          ./images/seafood-tablet2x.webp  708w,
+                          ./images/seafood-desktop2x.webp 740w,
+                          ./images/seafood-mobile2x.webp  900w
+                        "
+                        type="image/webp"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/seafood-tablet1x.jpg  354w,
+                          ./images/seafood-desktop1x.jpg 370w,
+                          ./images/seafood-mobile1x.jpg  450w,
+                          ./images/seafood-tablet2x.jpg  708w,
+                          ./images/seafood-desktop2x.jpg 740w,
+                          ./images/seafood-mobile2x.jpg  900w
+                        "
+                        src="./images/seafood-tablet1x.jpg"
+                        alt="Риба"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                    </picture>
+
                     <div class="card__overlay">
                       <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -214,17 +265,35 @@
               <div class="card">
                 <a class="card__services" href="#">
                   <div class="card__img">
-                    <img
-                    class="card_photo" srcset="./images/headphones-tablet1x.jpg 354w,
-                ./images/headphones-desktop1x.jpg 370w,
-                ./images/headphones-mobile1x.jpg 450w,
-                ./images/headphones-tablet2x.jpg 708w,
-                ./images/headphones-desktop2x.jpg 740w,
-                ./images/headphones-mobile2x.jpg 900w"
-                    src="./images/headphones-tablet1x.jpg"
-                      alt="Навушники"
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
-                />
+                    <picture>
+                      <source
+                        class="card_photo"
+                        srcset="
+                          ./images/headphones-tablet1x.webp  354w,
+                          ./images/headphones-desktop1x.webp 370w,
+                          ./images/headphones-mobile1x.webp  450w,
+                          ./images/headphones-tablet2x.webp  708w,
+                          ./images/headphones-desktop2x.webp 740w,
+                          ./images/headphones-mobile2x.webp  900w
+                        "
+                        type="image/webp"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/headphones-tablet1x.jpg  354w,
+                          ./images/headphones-desktop1x.jpg 370w,
+                          ./images/headphones-mobile1x.jpg  450w,
+                          ./images/headphones-tablet2x.jpg  708w,
+                          ./images/headphones-desktop2x.jpg 740w,
+                          ./images/headphones-mobile2x.jpg  900w
+                        "
+                        src="./images/headphones-tablet1x.jpg"
+                        alt="Навушники"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                    </picture>
+
                     <div class="card__overlay">
                       <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -252,14 +321,35 @@
               <div class="card">
                 <a class="card__services" href="#">
                   <div class="card__img">
-                    <img class="card_photo" srcset="./images/boxes-tablet1x.jpg 354w,
-                ./images/boxes-desktop1x.jpg 370w,
-                ./images/boxes-mobile1x.jpg 450w,
-                ./images/boxes-tablet2x.jpg 708w,
-                ./images/boxes-desktop2x.jpg 740w,
-                ./images/boxes-mobile2x.jpg 900w"
-                    src="./images/boxes-tablet1x.jpg" alt="Коробки"
-                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"/>
+                    <picture>
+                      <source
+                        class="card_photo"
+                        srcset="
+                          ./images/boxes-tablet1x.webp  354w,
+                          ./images/boxes-desktop1x.webp 370w,
+                          ./images/boxes-mobile1x.webp  450w,
+                          ./images/boxes-tablet2x.webp  708w,
+                          ./images/boxes-desktop2x.webp 740w,
+                          ./images/boxes-mobile2x.webp  900w
+                        "
+                        type="image/webp"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/boxes-tablet1x.jpg  354w,
+                          ./images/boxes-desktop1x.jpg 370w,
+                          ./images/boxes-mobile1x.jpg  450w,
+                          ./images/boxes-tablet2x.jpg  708w,
+                          ./images/boxes-desktop2x.jpg 740w,
+                          ./images/boxes-mobile2x.jpg  900w
+                        "
+                        src="./images/boxes-tablet1x.jpg"
+                        alt="Коробки"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                    </picture>
+
                     <div class="card__overlay">
                       <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -287,14 +377,35 @@
               <div class="card">
                 <a class="card__services" href="#">
                   <div class="card__img">
-                    <img class="card_photo" srcset="./images/monitor-tablet1x.jpg 354w,
-                ./images/monitor-desktop1x.jpg 370w,
-                ./images/monitor-mobile1x.jpg 450w,
-                ./images/monitor-tablet2x.jpg 708w,
-                ./images/monitor-desktop2x.jpg 740w,
-                ./images/monitor-mobile2x.jpg 900w"
-                    src="./images/monitor-tablet1x.jpg" alt="Монитор"
-                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"/>
+                    <picture>
+                      <source
+                        class="card_photo"
+                        srcset="
+                          ./images/monitor-tablet1x.webp  354w,
+                          ./images/monitor-desktop1x.webp 370w,
+                          ./images/monitor-mobile1x.webp  450w,
+                          ./images/monitor-tablet2x.webp  708w,
+                          ./images/monitor-desktop2x.webp 740w,
+                          ./images/monitor-mobile2x.webp  900w
+                        "
+                        type="image/webp"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/monitor-tablet1x.jpg  354w,
+                          ./images/monitor-desktop1x.jpg 370w,
+                          ./images/monitor-mobile1x.jpg  450w,
+                          ./images/monitor-tablet2x.jpg  708w,
+                          ./images/monitor-desktop2x.jpg 740w,
+                          ./images/monitor-mobile2x.jpg  900w
+                        "
+                        src="./images/monitor-tablet1x.jpg"
+                        alt="Монитор"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                    </picture>
+
                     <div class="card__overlay">
                       <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -322,14 +433,35 @@
               <div class="card">
                 <a class="card__services" href="#">
                   <div class="card__img">
-                    <img class="card_photo" srcset="./images/magazine-tablet1x.jpg 354w,
-                ./images/magazine-desktop1x.jpg 370w,
-                ./images/magazine-mobile1x.jpg 450w,
-                ./images/magazine-tablet2x.jpg 708w,
-                ./images/magazine-desktop2x.jpg 740w,
-                ./images/magazine-mobile2x.jpg 900w"
-                    src="./images/magazine-tablet1x.jpg" alt="Журнал"
-                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"/>
+                    <picture>
+                      <source
+                        class="card_photo"
+                        srcset="
+                          ./images/magazine-tablet1x.webp  354w,
+                          ./images/magazine-desktop1x.webp 370w,
+                          ./images/magazine-mobile1x.webp  450w,
+                          ./images/magazine-tablet2x.webp  708w,
+                          ./images/magazine-desktop2x.webp 740w,
+                          ./images/magazine-mobile2x.webp  900w
+                        "
+                        type="image/webp"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/magazine-tablet1x.jpg  354w,
+                          ./images/magazine-desktop1x.jpg 370w,
+                          ./images/magazine-mobile1x.jpg  450w,
+                          ./images/magazine-tablet2x.jpg  708w,
+                          ./images/magazine-desktop2x.jpg 740w,
+                          ./images/magazine-mobile2x.jpg  900w
+                        "
+                        src="./images/magazine-tablet1x.jpg"
+                        alt="Журнал"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                    </picture>
+
                     <div class="card__overlay">
                       <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -358,14 +490,35 @@
               <div class="card">
                 <a class="card__services" href="#">
                   <div class="card__img">
-                    <img class="card_photo" srcset="./images/label-tablet1x.jpg 354w,
-                ./images/label-desktop1x.jpg 370w,
-                ./images/label-mobile1x.jpg 450w,
-                ./images/label-tablet2x.jpg 708w,
-                ./images/label-desktop2x.jpg 740w,
-                ./images/label-mobile2x.jpg 900w"
-                    src="./images/label-tablet1x.jpg" alt="Бирка"
-                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"/>
+                    <picture>
+                      <source
+                        class="card_photo"
+                        srcset="
+                          ./images/label-tablet1x.webp  354w,
+                          ./images/label-desktop1x.webp 370w,
+                          ./images/label-mobile1x.webp  450w,
+                          ./images/label-tablet2x.webp  708w,
+                          ./images/label-desktop2x.webp 740w,
+                          ./images/label-mobile2x.webp  900w
+                        "
+                        type="image/webp"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/label-tablet1x.jpg  354w,
+                          ./images/label-desktop1x.jpg 370w,
+                          ./images/label-mobile1x.jpg  450w,
+                          ./images/label-tablet2x.jpg  708w,
+                          ./images/label-desktop2x.jpg 740w,
+                          ./images/label-mobile2x.jpg  900w
+                        "
+                        src="./images/label-tablet1x.jpg"
+                        alt="Бирка"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                    </picture>
+
                     <div class="card__overlay">
                       <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -393,17 +546,35 @@
               <div class="card">
                 <a class="card__services" href="#">
                   <div class="card__img">
-                    <img class="card_photo"
-                     srcset="./images/notebook-tablet1x.jpg 354w,
-                ./images/notebook-desktop1x.jpg 370w,
-                ./images/notebook-mobile1x.jpg 450w,
-                ./images/notebook-tablet2x.jpg 708w,
-                ./images/notebook-desktop2x.jpg 740w,
-                ./images/notebook-mobile2x.jpg 900w"
-                    src="./images/notebook-tablet1x.jpg"
-                      alt="Ноутбук"
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
-                     />
+                    <picture>
+                      <source
+                        class="card_photo"
+                        srcset="
+                          ./images/notebook-tablet1x.webp  354w,
+                          ./images/notebook-desktop1x.webp 370w,
+                          ./images/notebook-mobile1x.webp  450w,
+                          ./images/notebook-tablet2x.webp  708w,
+                          ./images/notebook-desktop2x.webp 740w,
+                          ./images/notebook-mobile2x.webp  900w
+                        "
+                        type="image/webp"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/notebook-tablet1x.jpg  354w,
+                          ./images/notebook-desktop1x.jpg 370w,
+                          ./images/notebook-mobile1x.jpg  450w,
+                          ./images/notebook-tablet2x.jpg  708w,
+                          ./images/notebook-desktop2x.jpg 740w,
+                          ./images/notebook-mobile2x.jpg  900w
+                        "
+                        src="./images/notebook-tablet1x.jpg"
+                        alt="Ноутбук"
+                        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw,100vw"
+                      />
+                    </picture>
+
                     <div class="card__overlay">
                       <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -438,8 +609,7 @@
               <a
                 lang="en"
                 href="./index.html"
-                class="logo
-                logo--inverse footer__logo"
+                class="logo logo--inverse footer__logo"
                 ><span class="logo">Web</span>Studio</a
               >
             </div>
@@ -540,53 +710,62 @@
     <div class="mobile-menu js-menu-container">
       <div class="mobile-menu__container">
         <button class="mobile-menu__close-button js-close-menu">
-         <svg width="40" height="40" class="mobile-close__icon">
+          <svg width="40" height="40" class="mobile-close__icon">
             <use href="./images/icons.svg#icon-close"></use>
-          </svg> 
+          </svg>
         </button>
-         <nav class="mobile-menu__nav">
-
-  <ul class="mobile-menu__site-nav">
-    <li class="mobile-nav__item"> <a
-                  href="./index.html"
-                  class="mobile-nav__link mobile-nav__link--current"
-                  >Студіо</a
-                ></li>
-    <li class="mobile-nav__item"> <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
-              </li>
-    <li class="mobile-nav__item">  <a href="#" class="mobile-nav__link">Контакти</a>
-</li>
-     </ul>
-</nav>
-
-  <ul class="mobile-menu__contacts">
-    <li class="mobile-contacts__item">
-      <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--blue"
-                >+38 096 111 11 11</a
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__site-nav">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link">Студіо</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a
+                href="./portfolio.html"
+                class="mobile-nav__link mobile-nav__link--current"
+                >Портфоліо</a
               >
-    </li>
-    <li class="mobile-contacts__item">
-      <a
-                  lang="en"
-                  href="mailto:info@devstudio.com"
-                  class="mobile-contacts__link"
-                >info@devstudio.com</a
-                >
-    </li></ul>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
 
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-contacts__item">
+            <a
+              href="tel:+380961111111"
+              class="mobile-contacts__link mobile-contacts__link--blue"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              lang="en"
+              href="mailto:info@devstudio.com"
+              class="mobile-contacts__link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
 
-  <ul class="mobile-menu__social">
-    <li class="mobile-social__item"><a href="" class="mobile-social__link">Instagram    
-              </a></li>
-    <li class="mobile-social__item"><a href="" class="mobile-social__link">  Twitter  
-           </a></li>
-    <li class="mobile-social__item"><a href="" class="mobile-social__link">  Facebook     </a></li>
-    <li class="mobile-social__item"><a href="" class="mobile-social__link">  LinkedIn</a></li>
-      </ul>
-  
+        <ul class="mobile-menu__social">
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Instagram </a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link"> Twitter </a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link"> Facebook </a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link"> LinkedIn</a>
+          </li>
+        </ul>
       </div>
-     
     </div>
-      <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

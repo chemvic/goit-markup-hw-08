@@ -16,63 +16,60 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <div class="header__logo"><a lang="en" href="./index.html" class="logo logo--black"
+        <div class="header__logo">
+          <a lang="en" href="./index.html" class="logo logo--black"
             ><span class="logo">Web</span>Studio</a
           >
         </div>
- 
-       
-          <nav class="navigation">
-           <ul class="site-nav">
-              <li class="site-nav__item">
-                <a
-                  href="./index.html"
-                  class="site-nav__link site-nav__link--current"
-                  >Студіо</a
-                >
-              </li>
-              <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
-              </li>
-              <li class="site-nav__item">
-                <a href="#" class="site-nav__link">Контакти</a>
-              </li>
-            </ul> 
-          </nav>          
-          
-          <ul class="contacts">
-            <li class="contacts__item">
-              <div>
-                <a
-                  lang="en"
-                  href="mailto:info@devstudio.com"
-                  class="contacts__link"
-                >
-                  <svg class="contacts__icon-mail icon-cont">
-                    <use href="./images/icons.svg#icon-mail"></use></svg
-                  >info@devstudio.com</a
-                >
-              </div>
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+380961111111" class="contacts__link"
-                ><svg class="contacts__icon-smartphone icon-cont">
-                  <use href="./images/icons.svg#icon-smartphone"></use></svg
-                >+38 096 111 11 11</a
+
+        <nav class="navigation">
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__link--current"
+                >Студіо</a
               >
             </li>
-          </ul>         
-        
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <div>
+              <a
+                lang="en"
+                href="mailto:info@devstudio.com"
+                class="contacts__link"
+              >
+                <svg class="contacts__icon-mail icon-cont">
+                  <use href="./images/icons.svg#icon-mail"></use></svg
+                >info@devstudio.com</a
+              >
+            </div>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link"
+              ><svg class="contacts__icon-smartphone icon-cont">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
         <!-- burger button -->
-      <button type="button" class="header__burger-menu js-open-menu">
-            <svg width="40" height="40" class="burger-menu__icon">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
-        </div>
+        <button type="button" class="header__burger-menu js-open-menu">
+          <svg width="40" height="40" class="burger-menu__icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-      </div>
-     
     </header>
     <main>
       <section class="hero hero__overlay">
@@ -149,11 +146,13 @@
               <div class="bord">
                 <img
                   class="we-do__img"
-                  srcset="./images/display-keyboard1x.jpg 1x,
-                  ./images/display-keyboard2x.jpg 2x"
+                  srcset="
+                    ./images/display-keyboard1x.jpg 1x,
+                    ./images/display-keyboard2x.jpg 2x
+                  "
                   src="./images/color-table1x.jpg"
                   alt="Набір тексту на клавіатурі"
-                  max-width="370"
+                  width="370"
                 />
                 <div class="we-do__text-bord">Десктопні додатки</div>
               </div>
@@ -161,20 +160,26 @@
             <li class="we-do__item">
               <img
                 class="we-do__img"
-                srcset="./images/smart-interface1x.jpg 1x,./images/smart-interface2x.jpg 2x  "
+                srcset="
+                  ./images/smart-interface1x.jpg 1x,
+                  ./images/smart-interface2x.jpg 2x
+                "
                 src="./images/color-table1x.jpg"
                 alt="Смартфон"
-                max-width="370"
+                width="370"
               />
               <div class="we-do__text-bord">Мобільні додатки</div>
             </li>
             <li class="we-do__item">
               <img
                 class="we-do__img"
-                srcset="./images/color-table1x.jpg 1x, ./images/color-table2x.jpg 2x"
+                srcset="
+                  ./images/color-table1x.jpg 1x,
+                  ./images/color-table2x.jpg 2x
+                "
                 src="./images/color-table1x.jpg"
                 alt="Таблиця кольорів"
-                max-width="370"
+                width="370"
               />
               <div class="we-do__text-bord">Дизайнерські рішення</div>
             </li>
@@ -188,16 +193,17 @@
             <li class="staff__item">
               <img
                 class="staff__photo"
-                srcset="./images/igor-desktop1x.jpg 270w,
-                ./images/igor-tablet1x.jpg 354w,
-                ./images/igor-mobile1x.jpg 450w,
-                ./images/igor-desktop2x.jpg 540w,
-                ./images/igor-tablet2x.jpg 708w,
-                ./images/igor-mobile2x.jpg 900w"
+                srcset="
+                  ./images/igor-desktop1x.jpg 270w,
+                  ./images/igor-tablet1x.jpg  354w,
+                  ./images/igor-mobile1x.jpg  450w,
+                  ./images/igor-desktop2x.jpg 540w,
+                  ./images/igor-tablet2x.jpg  708w,
+                  ./images/igor-mobile2x.jpg  900w
+                "
                 src="./images/igor-desktop1x.jpg"
                 alt="Ігор Дем'яненко"
                 sizes="(min-width:1200px) 25vw,(min-width:768px) 50vw,100vw"
-               
               />
               <div class="staff__info">
                 <h3 class="staff__name">Ігор Дем'яненко</h3>
@@ -238,16 +244,17 @@
             <li class="staff__item">
               <img
                 class="staff__photo"
-                srcset="./images/igor-desktop1x.jpg 270w,
-                ./images/olha-tablet1x.jpg 354w,
-                ./images/olha-mobile1x.jpg 450w,
-                ./images/olha-desktop2x.jpg 540w,
-                ./images/olha-tablet2x.jpg 708w,
-                ./images/olha-mobile2x.jpg 900w"
+                srcset="
+                  ./images/igor-desktop1x.jpg 270w,
+                  ./images/olha-tablet1x.jpg  354w,
+                  ./images/olha-mobile1x.jpg  450w,
+                  ./images/olha-desktop2x.jpg 540w,
+                  ./images/olha-tablet2x.jpg  708w,
+                  ./images/olha-mobile2x.jpg  900w
+                "
                 src="./images/olha-desktop1x.jpg"
                 alt="Ольга Рєпіна"
                 sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw,100vw"
-               
               />
               <div class="staff__info">
                 <h3 class="staff__name">Ольга Рєпіна</h3>
@@ -288,16 +295,17 @@
             <li class="staff__item">
               <img
                 class="staff__photo"
-                srcset="./images/igor-desktop1x.jpg 270w,
-                ./images/mykola-tablet1x.jpg 354w,
-                ./images/mykola-mobile1x.jpg 450w,
-                ./images/mykola-desktop2x.jpg 540w,
-                ./images/mykola-tablet2x.jpg 708w,
-                ./images/mykola-mobile2x.jpg 900w"
+                srcset="
+                  ./images/igor-desktop1x.jpg   270w,
+                  ./images/mykola-tablet1x.jpg  354w,
+                  ./images/mykola-mobile1x.jpg  450w,
+                  ./images/mykola-desktop2x.jpg 540w,
+                  ./images/mykola-tablet2x.jpg  708w,
+                  ./images/mykola-mobile2x.jpg  900w
+                "
                 src="./images/mykola-desktop1x.jpg"
                 alt="Микола Тарасов"
                 sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw,100vw"
-               
               />
               <div class="staff__info">
                 <h3 class="staff__name">Микола Тарасов</h3>
@@ -335,19 +343,20 @@
                 </ul>
               </div>
             </li>
-            <bali class="staff__item">
+            <li class="staff__item">
               <img
                 class="staff__photo"
-                srcset="./images/igor-desktop1x.jpg 270w,
-                ./images/mykhailo-tablet1x.jpg 354w,
-                ./images/mykhailo-mobile1x.jpg 450w,
-                ./images/mykhailo-desktop2x.jpg 540w,
-                ./images/mykhailo-tablet2x.jpg 708w,
-                ./images/mykhailo-mobile2x.jpg 900w"
+                srcset="
+                  ./images/igor-desktop1x.jpg     270w,
+                  ./images/mykhailo-tablet1x.jpg  354w,
+                  ./images/mykhailo-mobile1x.jpg  450w,
+                  ./images/mykhailo-desktop2x.jpg 540w,
+                  ./images/mykhailo-tablet2x.jpg  708w,
+                  ./images/mykhailo-mobile2x.jpg  900w
+                "
                 src="./images/mykhailo-desktop1x.jpg"
                 alt="Михайло Єрмаков"
                 sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw,100vw"
-               
               />
               <div class="staff__info">
                 <h3 class="staff__name">Михайло Єрмаков</h3>
@@ -384,7 +393,7 @@
                   </li>
                 </ul>
               </div>
-            </bali>
+            </li>
           </ul>
         </div>
       </section>
@@ -441,8 +450,7 @@
               <a
                 lang="en"
                 href="./index.html"
-                class="logo
-                logo--inverse footer__logo"
+                class="logo logo--inverse footer__logo"
                 ><span class="logo">Web</span>Studio</a
               >
             </div>
@@ -543,55 +551,62 @@
     <div class="mobile-menu js-menu-container">
       <div class="mobile-menu__container">
         <button class="mobile-menu__close-button js-close-menu">
-         <svg width="40" height="40" class="mobile-close__icon">
+          <svg width="40" height="40" class="mobile-close__icon">
             <use href="./images/icons.svg#icon-close"></use>
-          </svg> 
+          </svg>
         </button>
-         <nav class="mobile-menu__nav">
-
-  <ul class="mobile-menu__site-nav">
-    <li class="mobile-nav__item"> <a
-                  href="./index.html"
-                  class="mobile-nav__link mobile-nav__link--current"
-                  >Студіо</a
-                ></li>
-    <li class="mobile-nav__item"> <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
-              </li>
-    <li class="mobile-nav__item">  <a href="#" class="mobile-nav__link">Контакти</a>
-</li>
-     </ul>
-</nav>
-
-  <ul class="mobile-menu__contacts">
-    <li class="mobile-contacts__item">
-      <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--blue"
-                >+38 096 111 11 11</a
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__site-nav">
+            <li class="mobile-nav__item">
+              <a
+                href="./index.html"
+                class="mobile-nav__link mobile-nav__link--current"
+                >Студіо</a
               >
-    </li>
-    <li class="mobile-contacts__item">
-      <a
-                  lang="en"
-                  href="mailto:info@devstudio.com"
-                  class="mobile-contacts__link"
-                >info@devstudio.com</a
-                >
-    </li>
-  </ul>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
 
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-contacts__item">
+            <a
+              href="tel:+380961111111"
+              class="mobile-contacts__link mobile-contacts__link--blue"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              lang="en"
+              href="mailto:info@devstudio.com"
+              class="mobile-contacts__link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
 
-  <ul class="mobile-menu__social">
-    <li class="mobile-social__item"><a href="" class="mobile-social__link">Instagram    
-              </a></li>
-    <li class="mobile-social__item"><a href="" class="mobile-social__link">  Twitter  
-           </a></li>
-    <li class="mobile-social__item"><a href="" class="mobile-social__link">  Facebook     </a></li>
-    <li class="mobile-social__item"><a href="" class="mobile-social__link">  LinkedIn</a></li>
-      </ul>
-  
+        <ul class="mobile-menu__social">
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Instagram </a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link"> Twitter </a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link"> Facebook </a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link"> LinkedIn</a>
+          </li>
+        </ul>
       </div>
-     
     </div>
-
 
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
