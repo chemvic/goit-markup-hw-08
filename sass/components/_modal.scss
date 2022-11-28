@@ -183,6 +183,10 @@
     align-items: center;
     padding-left: 8px;
 
+    @media screen and (max-width:479px) {
+            flex-direction: column-reverse;
+        }
+
     @media screen and (min-width:1200px) {
         font-size: 14px;
         line-height: 1.71;
@@ -195,6 +199,10 @@
     color: var(--accent-color);
     font-size: 12px;
     line-height: 1.167;
+
+     @media screen and (max-width:479px) {
+           margin-bottom: 5px;
+        }
 }
 
 .modal__checkbox-agreem {
@@ -209,6 +217,7 @@
     width: 16px;
     height: 15px;
 }
+ 
 }
 
 .modal__icon-check {
@@ -219,7 +228,12 @@
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
     margin-right: 8px;
-}
+
+    @media screen and (max-width:479px) {
+            margin-top: 8px;
+            margin-right: 0px;
+        }
+   }
 
 
 

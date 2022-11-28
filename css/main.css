@@ -1357,6 +1357,14 @@ ul {
           align-items: center;
   padding-left: 8px;
 }
+@media screen and (max-width: 479px) {
+  .modal__agreement {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal__agreement {
     font-size: 14px;
@@ -1370,6 +1378,11 @@ ul {
   color: var(--accent-color);
   font-size: 12px;
   line-height: 1.167;
+}
+@media screen and (max-width: 479px) {
+  .modal__terms {
+    margin-bottom: 5px;
+  }
 }
 
 .modal__checkbox-agreem {
@@ -1392,6 +1405,12 @@ ul {
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   margin-right: 8px;
+}
+@media screen and (max-width: 479px) {
+  .modal__icon-check {
+    margin-top: 8px;
+    margin-right: 0px;
+  }
 }
 
 .modal__checkbox-agreem:checked + .modal__icon-check {
@@ -1771,11 +1790,7 @@ ul {
 .card__img {
   position: relative;
   overflow: hidden;
-  height: 100%;
-}
-
-.card_photo {
-  height: 294px;
+  display: block;
 }
 
 .card__overlay {

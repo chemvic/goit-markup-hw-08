@@ -97,10 +97,7 @@
 .card__img {
     position: relative;
     overflow: hidden;
-    height: 100%;
-}
-.card_photo{
-    height: 294px;
+    display: block;
 }
 
 .card__overlay {
