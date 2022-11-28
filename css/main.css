@@ -1882,7 +1882,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .card__img {
     width: 450px;
   }
@@ -1903,7 +1903,7 @@ ul {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .card__info {
     width: 450px;
   }
@@ -1919,7 +1919,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .card__overlay {
     width: 450px;
   }
