@@ -54,11 +54,6 @@
         justify-content: space-between;
     }
 
-    // @media screen and (min-width:1200px) {
-    //  display: flex;
-    //     align-items: center;
-    //     justify-content: space-between;   
-    // }
      }
 
 /* site-nav */
@@ -74,10 +69,8 @@
 
 
 .site-nav__item {
-    // @media screen and (min-width:768px) {
     margin-right: 50px;
     position: relative;
-        // }
    &:last-child {
     margin-right: auto;
 }
